@@ -1,0 +1,72 @@
+body {
+    width: 300px;
+    height: auto;
+    background-color: var(--c1);
+    --c1: #212142;
+    --c2: #3f4244;
+    --c3: #21f1ac;
+    --c4: #fafafa;
+  }
+  
+  .body-text {
+    margin: auto 5px;
+    font-size: 16px;
+    color: var(--c4);
+    padding: 0px;
+    position: relative;
+  }
+  
+  .encryption-section {
+    margin: 10px 5px;
+    position: relative;
+    display: grid;
+    row-gap: 3px;
+    column-gap: 3px;
+    font-size: 16px;
+  }
+  
+  .encrypt-button {
+    background-color: var(--c3);
+    border-color: var(--c2);
+    border-style: solid;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 10px 24px;
+    color: var(--c1);
+  }
+  
+  .encrypt-button:hover {
+    transition: 0.3s;
+    background-color: var(--c2);
+    color: var(--c4);
+  }
+  
+  .encrypt-button:active {
+    background-color: var(--c1);
+    color: var(--c4);
+  }
+  
+  #Ceasar {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+  
+  #Base64 {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+  
+  #Gronencrypt {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+  
+  #ROT {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+  
+  #Reset {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+  }

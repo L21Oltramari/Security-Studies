@@ -1,0 +1,28 @@
+{
+  "name": "Simple Text Encryptor",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Encrypt and decrypt text simply",
+  "action": { 
+    "default_icon": {
+      "16": "static/images/icon16.png",
+      "48": "static/images/icon48.png",
+      "128": "static/images/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Simple Text Encryptor"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js", "jquery-3.1.0.min.js"]
+    }
+  ],
+  "permissions": ["activeTab", "clipboardWrite", "scripting"],
+  "icons": {
+    "16": "static/images/icon16.png",
+    "48": "static/images/icon48.png",
+    "128": "static/images/icon128.png"
+  }
+  
+}
